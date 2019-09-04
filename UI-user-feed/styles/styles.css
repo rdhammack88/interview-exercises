@@ -1,0 +1,12 @@
+.comment-input__container {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
