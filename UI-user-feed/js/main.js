@@ -51,17 +51,9 @@ $(document).ready(() => {
             console.log(data.feed)
             let feed = data.feed;
             feed.map(user => $feedCardWrapper.append(buildListItem(user)));
+            $feedCount.html(feed.length);
             
         })
-
-        // .then(feed => {
-        //     console.log(feed.length())
-        //     $feedCount.html(feed.len);
-            
-        // });
-
-        // likeBtnClick();
-        // fetchData('./data.json').then(data => data.feed);
     }
 
     // fetchData('https://randomuser.me/api/?inc=picture').then(data => console.log(data.results[0].picture.thumbnail))
