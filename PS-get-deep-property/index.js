@@ -1,6 +1,6 @@
 function getDeepProperty(obj, path) {
     // your code goes here
-    //   if(!path.length) { return; }
+    if(!path.length) { return 'No path was given'; }
 
     let paths = path.split('.');
 
@@ -18,37 +18,7 @@ function getDeepProperty(obj, path) {
         return getDeepProperty(obj[prop], pathArr.join('.'))
     }
 
-
-    //   let newPathArr = pathArr.splice(0, 1).join('.')
-    //   console.log(newPathArr)
-
-
-
-
-
-
-    //   return getDeepProperty(obj[pathArr.split[0]], newPathArr)
-
-
-    //   return obj[pathArr[0]][pathArr[1]][pathArr[2]];
-
-    //   for(let i = 0; i < pathArr.length; i++) {
-
-    //   }
-
-    //   person.name.lastName
-    // console.log('no path') 
-
 }
-const someObj = {
-    person: {
-        name: {
-            first: 'FirstName',
-            middleInitial: 'I',
-            lastName: 'LastName'
-        }
-    }
-};
+const someObj = {person: {name: {first: 'FirstName', middleInitial: 'I', lastName: 'LastName'}}};
 const value = getDeepProperty(someObj, 'person.name.lastName');
-
 console.log("value: " + value)
