@@ -5,19 +5,18 @@ function getDeepProperty(obj, path) {
     let paths = path.split('.');
 
     if (paths.length < 2) {
-        console.log(path);
+        // console.log(path);
         return obj[path];
     }
 
     if (paths.length > 1) {
         let pathArr = path.split('.');
-        console.log("Original pathArr: " + pathArr)
+        // console.log("Original pathArr: " + pathArr)
         let prop = pathArr.shift();
-        console.log("Altered pathArr: " + pathArr)
-        console.log("Current Property: " + obj[prop]);
+        // console.log("Altered pathArr: " + pathArr)
+        // console.log("Current Property: " + obj[prop]);
         return getDeepProperty(obj[prop], pathArr.join('.'))
     }
-
 }
 const someObj = {person: {name: {first: 'FirstName', middleInitial: 'I', lastName: 'LastName'}}};
 const value = getDeepProperty(someObj, 'person.name.lastName');
