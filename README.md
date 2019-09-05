@@ -22,9 +22,9 @@
 
 - *__Completed for all **Required** test cases__*
 - *__Written in Angular@7 using SASS, Bootstrap@4 and Font-Awesome@5__*
+- *__Visit the live production @ [UI-User-Feed](https://rdhammack88.github.io/interview-exercises)__*
 
 #### To Run the web app
-
 - Download the zip or clone the project
 
 - **__To run DEVELOPMENT source code__**
