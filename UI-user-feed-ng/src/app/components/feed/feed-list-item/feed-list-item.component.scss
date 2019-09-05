@@ -33,21 +33,12 @@
   &:focus {
     outline: none;
   }
-
-  > :first-child:active {
-    outline: none;
-  }
 }
 
-.like-btn {
-
-  // > *:active &:first-child {
-  //   transform: scale(2);
-  // }
-
-  > :first-child:active {
+.like-btn:active {
+  // > :first-child:active {
     transform: scale(2);
-  }
+  // }
 }
 
 .like-count,
@@ -55,20 +46,19 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  // color: rgba(235, 231, 6, 0.945);
   font-size: .45em;
-  // padding: .09rem .11rem;
   padding: .15em;
 }
 
 .liked {
   color: rgba(0, 218, 218, 0.781);
+  // animation: scaled .2s ease-out;
 }
 
 
-/**
+/*-------------------------
  * Over-ride of Bootstrap Styles
- */
+ --------------------------*/
 .card {
 
   &-body {
@@ -78,6 +68,17 @@
   &-header,
   &-footer {
     padding: .25rem 1.25rem;
-    // background: red;
+  }
+}
+
+/*-------------------------
+ * Animations
+ --------------------------*/
+@keyframes scaled {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
   }
 }

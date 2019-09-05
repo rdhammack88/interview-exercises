@@ -8,30 +8,16 @@ import { User } from 'src/app/shared/user';
   styleUrls: ['./feed-list.component.scss']
 })
 export class FeedListComponent implements OnInit {
-  // @Output() addComment: EventEmitter<any> = new EventEmitter();
   feedList: Array<any>;
   feedCount: number;
   comment: string;
-  // user: any;
-  // id: number;
-  // user: User;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    // this.dataService.getFeedData().subscribe(data => {
-    //   // console.log(data.feed);
-    //   this.feedList = data.feed;
-    //   console.log(this.feedList);
-    // })
-
     this.dataService.getFeedData().subscribe((data: User[]) => {
-      // console.log(data.feed);
-      this.feedList = [...data.feed];
+      this.feedList = (data as any).feed;
       this.feedCount = this.feedList.length;
-      console.log(this.feedList);
-      // console.log(this.user);
-      console.log(this.feedList.map(data => data))
     })
   }
 
@@ -47,31 +33,16 @@ export class FeedListComponent implements OnInit {
       id: 3,
       timestamp: timestamp,
       timeZoneOffset: currentTimeOffset,
-      likes: 0
+      likes: 0,
+      thumb: this.dataService.getAvatar()
     }
 
-    console.log(commentData);
-
-    // this.addComment.emit(comment);
-
-
-    // let newComment = this.comment.trim();
-    // let currentTime = new Date();
-    // let currentTimeOffset = currentTime.getTimezoneOffset().toString();
-    // let newCommentData: User = {
-    //   user: 'User 3',
-    //   value: newComment,
-    //   id: 3,
-    //   timestamp: currentTime.getTime().toString(),
-    //   timeZoneOffset: currentTimeOffset,
-    //   likes: 0
-    // }
     this.feedList.unshift(commentData);
     this.feedCount++;
     this.comment = '';
   }
 
-  trackById(index:number, item: User) {
+  trackById(index:number, item:User) {
     return item.id;
   }
 }

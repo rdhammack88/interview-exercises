@@ -1,7 +1,7 @@
+<!-- feed-list component container -->
 <div class="container my-4 p-4">
   <div class="row justify-content-center">
       <div class="col-12 col-md-8 px-0">
-          <!-- <form class="comment-input__form" (ngSubmit)="onSubmit()"> -->
           <form class="comment-input__form">
               <div class="input-group">
                   <input type="text" class="form-control form-control-lg comment-input__form-input" placeholder="Enter your comment" name="new_comment" [(ngModel)]="comment">
@@ -22,6 +22,7 @@
 
   <div class="row justify-content-center">
     <ul class="col-12 col-md-8 list-group px-0">
+      <!-- feed-list-item Component -->
       <app-feed-list-item *ngFor="let item of feedList; let i of index; trackBy: trackById" [user]="item"></app-feed-list-item>
     </ul>
   </div>

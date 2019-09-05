@@ -6,14 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() title;
+  @Input() title: string;
+  @Input() subtitle: string;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  showCommentInput() {
-    console.log('Comment Input Should Display!')
   }
 }

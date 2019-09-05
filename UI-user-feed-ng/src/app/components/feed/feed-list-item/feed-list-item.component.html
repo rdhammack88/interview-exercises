@@ -1,12 +1,11 @@
+<!-- feed-list-item Component -->
 <li class="list-group-item my-3 feed-card__item">
   <div class="card feed-card">
     <h6 class="card-header bg-secondary text-light feed-card__header">
-      <!-- <img [src]="user.thumb" alt="Avatar for {{ user.user }}" class="feed-card__user-avatar"> -->
       <img [src]="user.thumb" alt="Avatar for {{ user.user }}" class="feed-card__user-avatar">
         <span class="feed-card__user-name">{{ user.user }}</span>
     </h6>
     <div class="card-body py-3 feed-card__body">
-        <!-- <h5 class="card-title feed-card__title">Special title treatment</h5> -->
         <p class="card-text feed-card__body-text">{{ user.value }}</p>
     </div>
     <div class="card-footer bg-secondary text-light feed-card__footer">
@@ -24,9 +23,9 @@
                 <i class="fas fa-thumbs-up"></i>
               </span>
               <ng-template #notLiked>
-                <span>
+                <span class="scaled">
                   <i class="far fa-thumbs-up"></i>
-              </span>
+                </span>
               </ng-template> -->
 
               <span class="badge badge-info like-count">
