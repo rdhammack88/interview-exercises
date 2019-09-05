@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { User } from 'src/app/shared/user';
 import { DataService } from 'src/app/shared/data.service';
 
@@ -19,6 +19,12 @@ export class FeedListItemComponent implements OnInit {
     // this.userAvatar = this.dataService.getUserAvatar().subscribe(data => {
       // console.log(data);
     // })
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+    //Add '${implements OnChanges}' to the class.
+    this.user.thumb = this.userAvatar;
   }
 
   onComment() {
