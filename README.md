@@ -41,14 +41,16 @@
 
 #### To Run the web app
 
+- Download the zip or clone the project
+- *_cd UI-user-feed-ng_*
+- *_npm install_*
+
 - *__To run DEVELOPMENT source code__*
-  - Download the zip or clone the project
-  - *_cd UI-user-feed-ng_*
-  - *_npm install_*
   - *_npm serve -o_*
 
-- *__To view the production ready by:__*
-  - Open "UI-user-feed-ng/dist" and double-click the index.html file
+- *__To view the production ready__*
+  - *_ng build --prod_*
+  - When the compilation completes, open "UI-user-feed-ng/dist" and double-click the index.html file
 
 - *__Visit the live production @ [UI-User-Feed](https://rdhammack88.github.io/interview-exercises)__*
 
