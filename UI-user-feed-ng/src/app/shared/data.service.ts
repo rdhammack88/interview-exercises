@@ -17,6 +17,13 @@ export class DataService {
       return this.http.get<User[]>(`${this.feedDataUrl}`);
   }
 
+  getAvatar() {
+    let randomNum: number = Math.floor((Math.random() * 99) + 1);
+    let avatarURL: string = 'https://randomuser.me/api/portraits/thumb/men/';
+    let userAvatar: string = `${avatarURL}${randomNum}.jpg`
+    return userAvatar;
+  }
+
   /** Get placeholder User Avatar from Random User API */
   // getUserAvatar(): Observable<any> {
   //   return this.http.get(`${this.userImageUrl}`);
