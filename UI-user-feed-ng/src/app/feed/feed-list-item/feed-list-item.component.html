@@ -1,24 +1,24 @@
 <li class="list-group-item my-3 feed-card__item">
   <div class="card feed-card">
-    <h5 class="card-header feed-card__header">
+    <h6 class="card-header bg-secondary text-light feed-card__header">
       <!-- <img [src]="user.thumb" alt="Avatar for {{ user.user }}" class="feed-card__user-avatar"> -->
       <img [src]="user.thumb" alt="Avatar for {{ user.user }}" class="feed-card__user-avatar">
         <span class="feed-card__user-name">{{ user.user }}</span>
-    </h5>
-    <div class="card-body feed-card__body">
+    </h6>
+    <div class="card-body py-3 feed-card__body">
         <!-- <h5 class="card-title feed-card__title">Special title treatment</h5> -->
         <p class="card-text feed-card__body-text">{{ user.value }}</p>
     </div>
-    <div class="card-footer text-muted feed-card__footer">
-        <p class="col-sm-8 d-inline-block my-0 feed-item__likes">
-          <button class="mr-3 comment-btn" (click)="onComment()">
-            <i class="far fa-comment"></i>
-            <span class="badge badge-dark comment-count">
+    <div class="card-footer bg-secondary text-light feed-card__footer">
+        <p class="col col-8 d-inline-block my-0 feed-card__likes">
+          <button class="mr-3 comment-btn" (click)="onComment()" title="Comment Button">
+            <i class="fas fa-comment"></i>
+            <span class="badge badge-info comment-count">
               0
               <span class="sr-only">comments</span>
             </span>
           </button>
-          <button class="like-btn" [ngClass]="{liked: itemLiked === true}" (click)="onLike()">
+          <button class="like-btn" [ngClass]="{liked: itemLiked === true}" (click)="onLike()" title="Like Button">
               <i class="fas fa-thumbs-up"></i>
               <!-- <span *ngIf="itemLiked; else notLiked">
                 <i class="fas fa-thumbs-up"></i>
@@ -29,13 +29,13 @@
               </span>
               </ng-template> -->
 
-              <span class="badge badge-dark like-count">
+              <span class="badge badge-info like-count">
                 {{ user.likes }}
                 <span class="sr-only">likes</span>
               </span>
           </button>
         </p>
-        <p class="col-sm-4 my-0 d-inline-block feed-item__date">{{ user.timestamp | date:'medium' }}</p>
+        <p class="col col-4 align-self-center my-0 text-center d-inline-block feed-card__date">{{ user.timestamp | date:'medium' }}</p>
     </div>
   </div>
 </li>
