@@ -1,27 +1,30 @@
-# UIUserFeedNg
+# UI-user-feed exercise
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+## Instructions
 
-## Development server
+- Using any UI framework (or none) create a social media user feed component using the data.json file provided and the requirements below
+  - Component should use data.json file to mock initial feed list items. The data is a list of feed objects that describe a user's comment or tweet.
+  - Component should display each feed value and the number of likes it has in a list of feed items.
+  - Component should provide a button around the number of likes for users to click and increment the number of likes for that item.
+  - Component should provide a text box for a user to add another item to the feed by pressing enter
+  - Component should display a count above the list of feed items of the number feed items. If new items are added this number should increment.
+- After you complete the exercise, provide notes below on how your code can be ran whether it be by simply opening a index.html file or through an npm command
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Candidate Notes
 
-## Code scaffolding
+### *__[User Interface - User Feed -- Written in ANGULAR 7](https://github.com/rdhammack88/interview-exercises/tree/master/UI-user-feed-ng)__*
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- *__Completed for all **Required** test cases__*
+- *__Written in Angular@7 using SASS, Bootstrap@4 and Font-Awesome@5__*
 
-## Build
+#### To Run the web app
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Download the zip or clone the project
 
-## Running unit tests
+- **__To run DEVELOPMENT source code__**
+- cd into project directory "UI-user-feed-ng"
+- npm install
+- npm serve -o
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- **__OR__** you can the production ready
+- Open "UI-user-feed-ng/dist" and double-click the index.html file
