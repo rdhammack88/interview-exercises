@@ -10,6 +10,7 @@
 - After you complete the exercise, provide any notes on your code below such as how to run your example
 
 ## Sample Code Structure
+
 ```javascript
 function getDeepProperty(obj, path) {
   // your code goes here
@@ -19,4 +20,14 @@ const someObj = {person: {name: {first: 'FirstName', middleInitial: 'I', lastNam
 const value = getDeepProperty(someObj, 'person.name.lastName');
 ```
 
-## Candidate Notes:
+## Candidate Notes
+
+### *__[Problem Solving - Get Deep Property](https://github.com/rdhammack88/interview-exercises/tree/master/PS-get-deep-property)__*
+
+#### To Run the algorithm
+
+- Download the zip or clone the project
+- cd into project folder
+- Make sure you have NodeJS installed
+- run *_node index.js_*
+- **I have also added an extra couple test cases to confirm the deep traversal.**
