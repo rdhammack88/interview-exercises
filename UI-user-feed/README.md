@@ -14,6 +14,9 @@
 
 ### *__[User Interface - User Feed -- Written in VanillaJS](https://github.com/rdhammack88/interview-exercises/tree/master/UI-user-feed)__*
 
-- *__Currently not completed__*
-  - Started, and was a little sloppy with a potential of a larger codebase than desired. Left for later completion and comparison to Angular version.
+- *__!!CURRENTLY NOT COMPLETED__*
+- *__Started, and was a little sloppy with a potential of a larger codebase than desired. Left for later completion and comparison to Angular version.__*
+
+#### To Run the app
+
 - No need to install anything, just double-click the index.html file to run.

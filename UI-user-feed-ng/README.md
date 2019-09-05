@@ -16,16 +16,16 @@
 
 - *__Completed for all **Required** test cases__*
 - *__Written in Angular@7 using SASS, Bootstrap@4 and Font-Awesome@5__*
-- *__Visit the live production @ [UI-User-Feed](https://rdhammack88.github.io/interview-exercises)__*
 
 #### To Run the web app
 
-- Download the zip or clone the project
+- *__To run DEVELOPMENT source code__*
+  - Download the zip or clone the project
+  - *_cd UI-user-feed-ng_*
+  - *_npm install_*
+  - *_npm serve -o_*
 
-- **__To run DEVELOPMENT source code__**
-- cd into project directory "UI-user-feed-ng"
-- npm install
-- npm serve -o
+- *__To view the production ready by:__*
+  - Open "UI-user-feed-ng/dist" and double-click the index.html file
 
-- **__OR__** you can the production ready
-- Open "UI-user-feed-ng/dist" and double-click the index.html file
+- *__Visit the live production @ [UI-User-Feed](https://rdhammack88.github.io/interview-exercises)__*

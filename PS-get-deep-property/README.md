@@ -24,10 +24,11 @@ const value = getDeepProperty(someObj, 'person.name.lastName');
 
 ### *__[Problem Solving - Get Deep Property](https://github.com/rdhammack88/interview-exercises/tree/master/PS-get-deep-property)__*
 
+- *__I have also added an extra couple test cases to confirm the deep traversal.__*
+
 #### To Run the algorithm
 
+- *__Make sure you have NodeJS installed__*
 - Download the zip or clone the project
-- cd into project folder
-- Make sure you have NodeJS installed
+- *_cd PS-get-deep-property_*
 - run *_node index.js_*
-- **I have also added an extra couple test cases to confirm the deep traversal.**
