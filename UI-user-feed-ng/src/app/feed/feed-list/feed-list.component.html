@@ -1,8 +1,28 @@
 <div class="container my-4 p-4">
+  <div class="row justify-content-center">
+      <div class="col-12 col-md-8 px-0">
+          <!-- <form class="comment-input__form" (ngSubmit)="onSubmit()"> -->
+          <form class="comment-input__form">
+              <div class="input-group">
+                  <input type="text" class="form-control form-control-lg comment-input__form-input" placeholder="Enter your comment" name="new_comment" [(ngModel)]="comment">
+                  <div class="input-group-append">
+                      <button class="input-group-text bg-dark text-white comment-input__form-input-btn" id="addComment" type="submit" (click)="addNewComment()">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
 
-  <div class="row">
-    <ul class="col-sm-12 list-group">
-      <app-feed-list-item *ngFor="let item of feedList" [user]="item"></app-feed-list-item>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 mt-0 pt-3">
+      <span class="feed-count">{{ feedCount }}</span>
+      Comments
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <ul class="col-12 col-md-8 list-group px-0">
+      <app-feed-list-item *ngFor="let item of feedList; let i of index; trackBy: trackById" [user]="item"></app-feed-list-item>
     </ul>
   </div>
 </div>
