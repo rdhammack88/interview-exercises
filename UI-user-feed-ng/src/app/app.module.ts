@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FeedListComponent } from './feed/feed-list/feed-list.component';
-import { FeedListItemComponent } from './feed/feed-list-item/feed-list-item.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FeedListComponent } from './components/feed/feed-list/feed-list.component';
+import { FeedListItemComponent } from './components/feed/feed-list-item/feed-list-item.component';
 
 @NgModule({
    declarations: [
