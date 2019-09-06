@@ -1,14 +1,14 @@
 <!-- feed-list-item Component -->
 <li class="list-group-item my-3 feed-card__item">
   <div class="card feed-card">
-    <h6 class="card-header bg-secondary text-light feed-card__header">
+    <h6 class="card-header feed-card__header">
       <img [src]="user.thumb" alt="Avatar for {{ user.user }}" class="feed-card__user-avatar">
         <span class="feed-card__user-name">{{ user.user }}</span>
     </h6>
     <div class="card-body py-3 feed-card__body">
         <p class="card-text feed-card__body-text">{{ user.value }}</p>
     </div>
-    <div class="card-footer bg-secondary text-light feed-card__footer">
+    <div class="card-footer feed-card__footer">
         <p class="col col-8 d-inline-block my-0 feed-card__likes">
           <button class="mr-3 comment-btn" (click)="onComment()" title="Comment Button">
             <i class="fas fa-comment"></i>
