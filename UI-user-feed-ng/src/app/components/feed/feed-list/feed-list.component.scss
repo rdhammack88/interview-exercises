@@ -5,18 +5,20 @@
     &:focus {
       border-right: none;
       border-color: rgba(1, 161, 28, 0.596);
-      box-shadow: -1px 4px 10px 0.2rem rgba(1, 161, 28, 0.596);
+      box-shadow: -1px 1px 10px .02rem rgba(1, 161, 28, 0.596);
 
       & ~ * {
-        border-color: rgba(1, 161, 28, 0.596);
-        // box-shadow: -1px 4px 0 0.2rem rgba(1, 161, 28, 0.596);
-        box-shadow: 5px 4px 10px 0.2rem rgba(1, 161, 28, 0.596)
+        // border-color: rgba(1, 161, 28, 0.596);
+        // // box-shadow: -1px 4px 0 0.2rem rgba(1, 161, 28, 0.596);
+        // box-shadow: 5px 1px 0px 0.2rem rgba(1, 161, 28, 0.596)
       }
     }
 
     &-btn:focus {
       // border-color: rgba(1, 161, 28, 0.596);
       // box-shadow: 0 0 0 0.2rem rgba(1, 161, 28, 0.596);
+      border-color: rgba(1, 161, 28, 0.596);
+      box-shadow: -1px 1px 10px .2rem rgba(1, 161, 28, 0.596);
     }
   }
 }
